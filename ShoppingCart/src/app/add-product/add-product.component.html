@@ -1,0 +1,23 @@
+<p>add-product works!</p>
+<form (ngSubmit)="addProduct(this.newProduct)">
+    <table>
+        <th></th>
+        <tr>
+            <td>Product : </td>
+            <td><input [(ngModel)] = "this.newProduct.name" placeholder="name" name="name"/></td>
+        </tr>
+        <tr>
+            <td>Price : </td>
+            <td><input [(ngModel)] = "this.newProduct.price" placeholder="price" name="price" /></td>
+        </tr>
+        <tr>
+            <td>Description : </td>
+            <td><input [(ngModel)] = "this.newProduct.description" placeholder="description" name="description" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save"/></td>
+        </tr>
+    </table>
+</form>
+<!-- <app-save-cancel></app-save-cancel> -->

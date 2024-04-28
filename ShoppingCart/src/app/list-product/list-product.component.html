@@ -1,0 +1,7 @@
+<p>list-product works!</p>
+<p style="color: green;" >{{res.statusMesage}}</p>
+<div>
+    <ul *ngFor="let prod of products">
+        <li><a [routerLink]="['/ProductDetails', prod.id]">{{prod.name}}</a></li>
+    </ul>
+</div>
